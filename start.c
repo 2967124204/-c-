@@ -141,25 +141,247 @@
 //    return 0;
 //}
 //打印倒三角 
-int main(){
-    int i, j;
-    
-    for(i = 5; i >=1; i--) {
-        for(j = 5; j <= 5 - i; j++) {
-            printf(" ");
-        }
-        for(j = 1; j <= 2 * i - 1; j++) {
-            printf("*");
-        }
-        printf("\n");
-    }
-    
-    return 0;
-}
+//int main(){
+//    int i, j;
+//    
+//    for(i = 5; i >=1; i--) {
+//        for(j =1;j<=5-i;j++) {
+//            printf(" ");
+//        }
+//        for(j = 1; j <= 2 * i - 1; j++) {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    
+//    return 0;
+//}
+//打印菱形 
+//int main (){
+//int a,i,j;
+//do{
+//	scanf("%d",&a);
+//}while(a%2==0);
+//int b=(a+1)/2;
+//for(i=1;i<=b;i++){
+//	for(j=1;j<=b-i;j++){//第一次的b-i就是实际能运行的次数 
+//		printf(" ");
+//	}
+//	for(j=1;j<=2*i-1;j++){
+//		printf("*");
+//	}
+//	printf("\n");}
+//for(i=b;i>=1;i--){
+//	for(j=1;j<=b-i;j++){
+//		printf(" ");
+//	}
+//	for(j=1;j<=2*i-1;j++){
+//		printf("*");
+//	}
+//	printf("\n");
+//
+//}
+//
+//	
+//	
+//	
+//	
+//	
+//	
+//return 0;
+//} 
+//输出乘法口诀表 
+//int main(){
+//int a=9,i=1,j;
+//for (i=1;i<=9;i++){
+//	for(j=1;j<=i;j++){
+//		printf("%d*%d=%d ",i,j,i*j);
+//	}
+//	printf("\n");
+//}
+//return;
+//} 
+//int main(){
+//int a=9,i=1,j;
+//for (i=1;i<=9;i++){
+//	for(j=i;j<=9;j++){
+//		printf("%d*%d=%d ",j,i,i*j);
+//	}
+//	printf("\n");
+//}
+//return  0;
+//}
+//倒过来的二进制 
 
-			
-	
-	
+//int a,b=0;
+//scanf("%d",&a);
+//while(1){
+//	b=b*10+a%2;
+//	a/=2;
+//	if(a<2){
+//		b=b*10+a;
+//		break; 
+//		
+//	}
+//}	
+//printf("%d",b);	
+//return 0;
+//} 
+
+//二进制转换 
+//int main(){
+
+//int a, b = 0, c = 1;
+//scanf("%d", &a);
+//    
+//while(a > 0) {
+//        b = b + a % 2 * c;
+//        a /= 2;
+//        c = c * 10;
+//    }
+//printf("%d", b);
+
+
+//}
+//打印菱形 
+//int main(){
+//int a,b,i;
+//for(i=1;i<=5;i++){
+//	for(b=1;b<=5-i;b++){
+//		printf(" ");
+//	}
+//	for(b=1;b<=2*i-1;b++){
+//		printf("*");
+//	}
+//	printf("\n");
+//}	
+//for(i=4;i>=1;i--){
+//	for(b=1;b<=5-i;b++){
+//		printf(" ");
+//	}
+//	for(b=1;b<=2*i-1;b++){
+//		printf("*");
+//	}
+//	printf("\n");
+//}	
+//	
+//	
+//	
+//return 0;
+//} 
+//二进制转换
+//int main(){
+//int a=13,b=0,c=1;
+//while(a>0){
+//	b=b+a%2*c;
+//	a/=2;
+//	c*=10;
+//}
+//printf("%d",b);	
+//	
+//	
+//	
+//return 0;
+//} 
+//回文数的判断及转换
+//int main(){
+//int a,c;
+//scanf("%d",&a);
+//c=a; //扫描以后再接住 
+// //当a进入循环后  a的值就被改变了 再去和b比较就错了 
+//int b=0;
+//while(a>0)	{
+//	b=b*10+a%10;
+//	a/=10;
+//	
+//}
+// 
+//if(b==c){
+//	printf("是回文数"); 
+//}
+//else{
+//	printf("不是回文数");
+//}
+//
+//
+//
+//return 0;
+//} 
+//冒泡排序从小到大 
+//int main() {
+//int i,b,c;
+//int a[5];
+//for(i=0;i<=4;i++){
+//	scanf("%d",&a[i]);
+//}
+//for(i=0;i<4;i++){
+//	for(b=0;b<4-i;b++){
+//		if(a[b]>a[b+1]){
+//		c=a[b];
+//		a[b]=a[b+1];
+//		a[b+1]=c;
+//		}
+//		
+//	}
+//}
+//for(i=0;i<=4;i++){
+//	printf("%3d",a[i]);
+//}
+//
+//
+//
+//
+//return 0;
+//}
+//冒泡函数从大到小 
+//int main(){
+//int i,b,c;
+//int a[5];
+//for(i=0;i<=4;i++){
+//	scanf("%d",&a[i]);
+//}
+//for(i=3;i>=0;i--){
+//	for(b=4;b>=4-i;b--){
+//		if(a[b]>a[b-1]){
+//		c=a[b];
+//		a[b]=a[b-1];
+//		a[b-1]=c;
+//		}
+//		
+//	}
+//}
+//for(i=0;i<=4;i++){
+//	printf("%3d",a[i]);
+//}	
+//return 0;
+//} 
+//插空排序 
+//int main(){
+//int a[6]={1,2,4,6,9};
+//int b;
+//int i; 
+//scanf("%d",&b);
+//for(i=4;i>=0;i--){
+//	if(a[i]<b){
+//		a[i+1]=b;
+//		break;
+//	}
+//	else {
+//		a[i+1]=a[i];
+//	}
+//}
+//if (i<0){
+//	a[0]=b;
+//}	
+//for(i=0;i<=5;i++){
+//printf("%3d",a[i]);	}
+//	
+//
+//	
+//	
+//	
+//return 0;
+//}
 	
 	
 	
