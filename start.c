@@ -195,11 +195,11 @@
 //int a=9,i=1,j;
 //for (i=1;i<=9;i++){
 //	for(j=1;j<=i;j++){
-//		printf("%d*%d=%d ",i,j,i*j);
+//		printf("%d*%d=%d ",j,i,i*j);
 //	}
 //	printf("\n");
 //}
-//return;
+//return 0;
 //} 
 //int main(){
 //int a=9,i=1,j;
@@ -382,6 +382,186 @@
 //	
 //return 0;
 //}
+//顺序查找 
+//int main(){
+//int a[5]={1,2,4,6,9};
+//int b;
+//int i; 
+//scanf("%d",&b);
+//for(i=0;i<=4;i++){
+//	if(a[i]==b){
+//		printf("找到了是第%d个数",i+1);
+//		break;}
+//	
+//	}
+//if(i>4){
+//	printf("未找到");
+//} 
+//折半排序 
+//int main(){
+//int d[5]={1,2,4,6,9};
+//int a=0;
+//int b=4;
+//int c,mid;
+//scanf("%d",&c);
+//do{
+//	 mid=(a+b)/2;
+//	if(c==d[mid]){
+//		printf("%d的位置是a[%d]",c,mid);
+//		break;
+//		
+//	}
+//	else if(c<d[mid])
+//	     b=mid-1;
+//    else 
+//         a=mid+1;
+//} while(a<=b);
+//if(c!=d[mid])
+//
+//	printf("没找到"); 
+//
+//	
+//return 0;
+//} 
+//
+//int main(){
+//int i,j;
+//int a[2][3];
+//for(i=0;i<=1;i++)
+//     for(j=0;j<=2;j++){
+//     	scanf("%d",&a[i][j]);
+//	 }
+//for(i=0;i<=1;i++){
+//	printf("%4d%4d%4d\n",a[i][0],a[i][1],a[i][2]);
+//}
+//
+//
+//return 0;
+//
+//}
+// 计算对角线上的和  
+//
+//int main(){
+//int i,j,c=0.;
+//int a[3][3];
+//for(i=0;i<=2;i++)
+//     for(j=0;j<=2;j++){
+//     	scanf("%d",&a[i][j]);
+//	 }
+//for(i=0;i<=2;i++){
+//
+//     for(j=0;j<=2;j++){
+//     	printf("%d",a[i][j]);
+//     	}
+//     printf("\n");
+//}
+//
+//	
+//c=0;
+//for(i=0;i<=2;i++)
+//     for(j=0;j<=2;j++){
+//     	if(i+j==2||i==j){
+//     		c=c+a[i][j];
+//		 }
+//	 }
+//printf("%d",c);
+//
+//
+//
+//
+//
+//
+//return 0;
+//}
+//输出杨辉三角
+//#define N 11
+//int main(){
+//int i,j,y[N][N];
+// 初始化数组为0
+//for (i = 0; i < N; i++) {
+//        for (j = 0; j < N; j++) {
+//            y[i][j] = 0;
+//        }
+//    }
+//for (i=1;i<N;i++){
+//	y[i][i]=1;
+//	y[i][1]=1; 
+//	for(j=2;j<=i-1;j++){
+//		y[i][j]=y[i-1][j]+y[i-1][j-1];
+//	}
+//}
+//for (i=1;i<N;i++){
+//	for(j=1;j<=i;j++){
+//	
+//	printf("%4d",y[i][j]);}
+//    printf("\n");    	
+//
+//	
+//}
+//	
+//return 0;
+//}  
+//斐波那契数列 
+//int main(){
+//int a[20000];
+//a[1]=1;
+//a[2]=1;
+//int i=1,b;
+//for(i=3;i<20000;i++){
+//	a[i]=a[i-1]+a[i-2];
+//}
+//scanf("%d",&b);
+//printf("%d",a[b]);
+// 
+//
+//
+//
+//
+//
+//return 0;
+//}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+//幻方
+//int main() {
+//int r,c,n,i,j,r1,c1;
+//scanf("%d",&n);
+//n=2*n-1;
+//int a[n][n];
+//for(i=0;i<=n-1;i++)
+//    for(j=0;j<=n-1;j++){
+//    	a[i][j]=0; 
+//	}
+//r=0;
+//c=n/2;
+//for(i=1;i<=n*n;i++){
+//	a[r][c]=i;
+//	r1=(r-1+n)%n;
+//	c1=(c+1)%n;
+//	if (a[r1][c1]==0){
+//	r=r1;
+//	c=c1;
+//	}
+//	else{
+//	r=(r+1)%n;
+//	}
+//	
+//}
+//for(i=0;i<=n-1;i++){
+//
+//    for(j=0;j<=n-1;j++){
+//    	printf("%4d",a[i][j]);
+//	}
+//	printf("\n");
+//}
+//return 0;
+//}
+	
+	
+	
+	
+	
+
+
+
 	
 	
 	
